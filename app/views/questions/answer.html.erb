@@ -1,0 +1,14 @@
+<%# display question and answer %>
+ <%# controller will need to read the question from params and compute an
+ instance variable @answer for the view to display. %>
+<h1>Stupid Coaching</h1>
+
+<p><%=params[:question]%></p>
+<br>
+<p>-You</p>
+
+<p><%=@answer%></p>
+<br>
+<p>-Your coach</p>
+
+<%= link_to("Ask a new question", ask_path) %>
