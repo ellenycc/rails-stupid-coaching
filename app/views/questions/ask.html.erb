@@ -1,8 +1,12 @@
-<div class="px">
-  <h1>Stupid Coaching</h1>
+<h1>Stupid Coaching</h1>
 
-  <form action="/answer" data-turbo="false">
-    <input type="text" class="form-control" name="question" placeholder="Your question">
-    <input type="submit" value="Ask!">
-  </form>
-</div>
+
+<form action="/answer" data-turbo="false">
+  <div class="input-group mb-3">
+      <label for="input-group">Ask your coach anything</label>
+      <input class="form-control" type="text" name="question" placeholder="Your question" aria-label="Your question" aria-describedby="button-addon1">
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="button" id="button-addon1">Ask!</button>
+      </div>
+  </div>
+</form>

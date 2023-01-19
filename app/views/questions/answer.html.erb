@@ -3,12 +3,12 @@
  instance variable @answer for the view to display. %>
 <h1>Stupid Coaching</h1>
 
-<p><%=params[:question]%></p>
-<br>
-<p>-You</p>
+<div>
+  <p><%=params[:question]%></p>
+  <p>-You</p>
 
-<p><%=@answer%></p>
-<br>
-<p>-Your coach</p>
+  <p><%=@answer%></p>
+  <p>-Your coach</p>
 
-<%= link_to("Ask a new question", ask_path) %>
+  <%= link_to("Ask a new question", ask_path) %>
+</div>
